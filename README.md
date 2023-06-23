@@ -20,15 +20,15 @@
 
    2.2)альтернативный путь скачать готовый компоуз с их официального гита
 
-   sudo docker ps -> находим нужный контейнер
-   sudo docker exec -it <hash> /bin/bash
-   cd /home/zulip/deployments/current/
-   sudo su zulip
-   ./manage.py generate_realm_creation_link
-   создаем организацию -> попадаем на титульную страницу
-   создаем группу
-   создаем бота
-   копируем email и api-key бота
-   Создаем баш скрипт сравнения метки изменений внутри директории
-   добавляем в крон строку
-   \* \* \* \* \* <path_to_file>botchecker.sh >var/log/<path_to_log_dir>
+sudo docker ps -> находим нужный контейнер
+sudo docker exec -it <hash> /bin/bash
+cd /home/zulip/deployments/current/
+sudo su zulip
+./manage.py generate_realm_creation_link
+создаем организацию -> попадаем на титульную страницу
+создаем группу
+создаем бота
+копируем email и api-key бота
+Создаем баш скрипт сравнения метки изменений внутри директории
+добавляем в крон строку
+\* \* \* \* \* <path_to_file>botchecker.sh >var/log/<path_to_log_dir>
