@@ -30,4 +30,5 @@
    создаем бота
    копируем email и api-key бота
    Создаем баш скрипт сравнения метки изменений внутри директории
-   добавляем в крон строку \* \* \* \* \* <path_to_file>botchecker.sh >var/log/<path_to_log_dir>
+   добавляем в крон строку
+   \* \* \* \* \* <path_to_file>botchecker.sh >var/log/<path_to_log_dir>
