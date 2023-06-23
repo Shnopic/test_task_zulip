@@ -1,0 +1,17 @@
+version: "3"
+services:
+  zulip:
+    image: zulip_image_test21
+    ports:
+      - "8089:8089"
+    environment:
+      DB_HOST: db
+      DB_USER: zulip
+      DB_PASS: zulip
+    links:
+      - db
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: zulip
+      POSTGRES_PASSWORD: zulip
