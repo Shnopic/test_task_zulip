@@ -11,11 +11,15 @@
 
 1. При добавлении новых файлов с новыми именами
 2. При обновлении файла с сохранением имени уже существующего (замена файла без изменения имени)
+
    1)Билдим image командой sudo docker build -t zulip_image_test21 .
+
    2)docker-compose up
+
    2.1) альтернативный путь - sudo docker pull zulip/docker-zulip:7.1-0 потом -> run
+
    2.2)альтернативный путь скачать готовый компоуз с их официального гита
-   ***
+
    sudo docker ps -> находим нужный контейнер
    sudo docker exec -it <hash> /bin/bash
    cd /home/zulip/deployments/current/
